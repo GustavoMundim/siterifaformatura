@@ -1,1 +1,12 @@
-<h1>Muito obrigado de verdade</h1>
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% block body %}
+<section>
+    <img class="gratidao-emoji" src="{% static 'img/gratidao.png' %}">
+    <h1 style="font-size: 20px;" class="h1-animate">Gratidão por você contribuir com a rifa</h1>
+</section>
+
+{% endblock %}

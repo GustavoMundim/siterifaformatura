@@ -7,5 +7,6 @@ urlpatterns = [
     path('', homepage, name='home'),
     path('rifa/<int:rifa_id>/', comprar, name='shop'),
     path('finalizar_pagamento/', finalizar_pagamento, name='finalizar_pagamento'),
-    path('pix/', pix, name='pix')
+    path('pix/', pix, name='pix'),
+    path('aprovada/', compraaprovada, name='aprovada')
 ]

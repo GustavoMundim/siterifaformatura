@@ -27,6 +27,9 @@ def comprar(request, rifa_id):
             pagamento.save()
             return redirect(link_pagamento)
 
+def compraaprovada(request):
+    return render(request, 'agradecimento.html')
+
 def pix(request):
     return render(request, 'pix.html')
 
@@ -40,7 +43,7 @@ def finalizar_pagamento(request):
         numero_escolhido = Sorteio.objects.get(numero_rifa=rifa_id)
         numero_escolhido.aprovado = True
         numero_escolhido.save()
-        return redirect('siterifa:home')
+        return redirect('siterifa:aprovada')
 
     elif status == 'rejected':
         numero_escolhido = Sorteio.objects.get(numero_rifa=rifa_id)

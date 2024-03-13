@@ -4,7 +4,7 @@
         color: white;
     }
     .p-animate{
-        font-size: 16px;
+        font-size: 12px;
     }
     .emoji-facu{
         width: 200px
@@ -16,13 +16,16 @@
         width: 200px
     }
     .btn-on{
-        width: 90px;
+        width: 120px;
         font-size: 20px;
         justify-content: center;
         align-items: center;
     }
     .border-pix{
         width: 350px
+    }
+    .gratidao-emoji{
+        width: 200px
     }
 
 }
