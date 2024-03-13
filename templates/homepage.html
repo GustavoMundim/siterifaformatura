@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Rifa
+{% endblock %}
+
+{% block body %}
+<section class="sec-1 show-animate">
+    <img class="animate emoji-facu" src="{% static 'img/chapeu_facu.png' %}">
+    <h1 class="animate h1-animate"><br>Rifa de Conclusão Curso
+        <br>
+        Engenharia Agrônomica
+        <p class="p-animate">Role para baixo</p>
+    </h1>
+</section>
+
+<section class="sec-2">
+    <img class="animate money-img" src="{% static 'img/money.png' %}">
+    <h1 class="animate h1-animate">Contribua com R$ 10,00
+        <p class="animate p-animate">E concorra a uma Echo Dot 5ª Geração Smart Speaker</p>
+    </h1>
+</section>
+
+<section class="sec-3">
+    <img class="animate sorteio-image" src="{% static 'img/sorteio.png' %}">
+    <h1 class="animate h1-animate">
+        Escolha seu numero abaixo
+    </h1>
+</section>
+
+<section>
+    <div class="container space-y-2 sm:space-y-7">
+        {% for i in my_range %}
+            {% if i in numeros_bloqueados %}
+            <button class="rounded-full bg-red-600 px-4 py-1 hover:bg-red-600 btn-on">{{ i }}</button>
+            {% else %}
+            <button class="rounded-full bg-green-600 px-4 py-1 hover:bg-red-600 btn-on" onclick="sorteio({{i}}, this)">{{ i }}</button>
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+
+
+<script>
+    function sorteio(id, button) {
+        var url = '/rifa/' + id;
+        window.location.href = url;
+    }
+</script>
+{% endblock %}
+
+

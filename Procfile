@@ -1,0 +1,1 @@
+web: gunicorn siterifa.wsgi --log-file -

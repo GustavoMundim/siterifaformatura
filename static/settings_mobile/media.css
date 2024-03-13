@@ -1,0 +1,88 @@
+@media all and (max-width: 430px) {
+    .h1-animate{
+        font-size: 27px;
+        color: white;
+    }
+    .p-animate{
+        font-size: 16px;
+    }
+    .emoji-facu{
+        width: 200px
+    }
+    .sorteio-image{
+        width: 200px
+    }
+    .money-img{
+        width: 200px
+    }
+    .btn-on{
+        width: 90px;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .border-pix{
+        width: 350px
+    }
+
+}
+
+
+/* @media only screen and (max-width: 2560px) {
+    .h1-animate{
+        font-size: 120px;
+        color: white;
+    }
+    .p-animate{
+        font-size: 90px;
+    }
+    .emoji-facu{
+        width: 500px
+    }
+    .sorteio-image{
+        width: 500px
+    }
+    .money-img{
+        width: 500px
+    }
+    .btn-on{
+        width: 150px;
+        font-size: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .border-pix{
+        width: 800px
+    }
+    .numero-rifa{
+        font-size: 45px;
+    }
+
+    #sobrenome{
+        font-size: 30px
+    }
+
+    #nome{
+        font-size: 30px
+    }
+
+    .input-nome{
+        font-size: 50px
+    }
+    .input-sobrenome{
+        font-size: 50px
+    }
+    .ico-mc{
+        width: 250px
+    }
+    .aviso-campo{
+        font-size: 45px;
+    }
+    .button-send{
+        font-size: 35px;
+    }
+    .aviso-whats{
+        font-size: 19px;
+        height: 20px;
+    }
+} */

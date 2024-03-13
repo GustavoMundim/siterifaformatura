@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.money-img{
+    width: 200px
+}
+
+.ico-mc{
+    width: 130px
+}
+
+.btn-on{
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: black
+}
+
+
+.h1-animate{
+    font-size: 75px;
+    color: white;
+}
+
+
+
+
+.p-animate{
+    font-size: 35px;
+    color:aqua;
+
+}
+
+
+.sec-2 p {
+    color: #0f0
+}
+
+
+.sec-3 p{
+    color: #e0f
+}
+
+.sec-4{
+    color: #ff0
+}
+
+.sec-5 .images{
+    max-width: 400px;
+    margin: 0 30px
+}
+
+
+.sec-1 .animate{
+    transform: translateX(-100%)
+}
+
+.sec-2 .animate{
+    transform: translateX(-100%)
+}
+
+.sec-3 .animate{
+    transform: translateX(-100%)
+}
+
+.sec-4 .animate{
+    transform: translateX(-100%)
+}
+
+.sec-5 .animate{
+    transform: translateX(-100%)
+}
+
+section .animate{
+    transition: 1s;
+
+}
+
+.sec-1.show-animate .animate{
+    transform: translateX(0);
+}
+
+
+.sec-2.show-animate .animate{
+    transform: translateX(0);
+}
+
+.sec-3.show-animate .animate{
+    transform: translateX(0);
+}
+
+.sec-4.show-animate .animate{
+    transform: translateX(0);
+}
+
+.sec-5.show-animate .animate{
+    transform: translateX(0);
+}
+
+
+
+.emoji-facu{
+    width: 190px
+}
+.numero-rifa{
+    color: white
+}
+
+.aviso-whats{
+    font-size: 12px;
+    color: white
+}
+
+
+.logo-whats {
+    position: fixed;
+    right: 1rem;
+    bottom: 0.8rem;
+    width: 4rem;
+  }
+  
+  .logo-whats {
+    transform: translate(0.5rem, 0.5rem);
+  }
+  
+  
+  
+  
+  .logo-whats:hover {
+    transform: translate(0.6rem, 0.1rem);
+  }
+  
+  
+  .logo-whats img {
+    width: 50%;
+  }
+  
+  .logo-whats {
+    color: #1a77a4;
+  }

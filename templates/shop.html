@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+<section class="rifa">
+    <!-- <div class="container-qrcode bg-white shadow border border-Black-5 rounded-2xl max-w-2xl flex flex-col gap-[8px] mx-auto mt-[16px] p-[24px]">
+    </div> -->
+    <img class="ico-mc" src="{% static 'img/mc.png' %}">
+    <form class="container-adjust w-full max-w-lg" method="POST" action="">{% csrf_token %}
+        <div class="numero-rifa">
+           N°: {{rifa}}
+        </div>
+        <div class="flex flex-wrap -mx-3 mb-6">
+          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <label id='nome' class=" block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+              Nome
+            </label>
+            <input class="input-nome appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane" name="nome">
+            <p class="aviso-campo text-red-500 text-xs italic">Por favor insira os dados em todos campos</p>
+          </div>
+          <div class="w-full md:w-1/2 px-3">
+            <label id="sobrenome" class=" block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+              Sobrenome
+            </label>
+            <input class="input-sobrenome appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" name="sobrenome">
+          </div>
+        </div>
+        <a href="{% url 'siterifa:pix' %}" class="aviso-whats rounded-md bg-green-600 py-2">Caso queira fazer por PIX clique aqui</a>
+        <div class="flex justify-end">
+          <button type="submit" class="button-send bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Enviar
+          </button>
+        </div>
+    </form>
+</section>
+
+{% endblock %}
