@@ -1,6 +1,49 @@
+@media all and (max-width: 390px) {
+    .h1-animate{
+        font-size: 10px;
+        color: white;
+    }
+    .p-animate{
+        font-size: 12px;
+    }
+    .emoji-facu{
+        width: 200px
+    }
+    .sorteio-image{
+        width: 200px
+    }
+    .money-img{
+        width: 200px
+    }
+    .btn-on{
+        width: 190px;
+        font-size: 20px;
+    }
+    .border-pix{
+        width: 350px
+    }
+    .gratidao-emoji{
+        width: 200px
+    }
+    .border-alexa{
+        width: 350px
+    }
+    .alexa-text{
+        font-size: 12px
+    }
+}
+
+
+@media all and (max-width: 414px){
+    .alexa-text{
+        font-size: 5px
+    }
+}
+
+
 @media all and (max-width: 430px) {
     .h1-animate{
-        font-size: 27px;
+        font-size: 15px;
         color: white;
     }
     .p-animate{
@@ -27,65 +70,25 @@
     .gratidao-emoji{
         width: 200px
     }
+    .border-alexa{
+        width: 350px
+    }
 
 }
 
 
-/* @media only screen and (max-width: 2560px) {
-    .h1-animate{
-        font-size: 120px;
-        color: white;
+
+
+@media all and (max-width: 414px) {
+    .alexa-text{
+        font-size: 14px
     }
-    .p-animate{
-        font-size: 90px;
-    }
-    .emoji-facu{
-        width: 500px
-    }
-    .sorteio-image{
-        width: 500px
-    }
-    .money-img{
-        width: 500px
-    }
+}
+
+
+
+@media all and(max-width: 912px){
     .btn-on{
-        width: 150px;
-        font-size: 50px;
-        justify-content: center;
-        align-items: center;
+        font-size: 20%;
     }
-    .border-pix{
-        width: 800px
-    }
-    .numero-rifa{
-        font-size: 45px;
-    }
-
-    #sobrenome{
-        font-size: 30px
-    }
-
-    #nome{
-        font-size: 30px
-    }
-
-    .input-nome{
-        font-size: 50px
-    }
-    .input-sobrenome{
-        font-size: 50px
-    }
-    .ico-mc{
-        width: 250px
-    }
-    .aviso-campo{
-        font-size: 45px;
-    }
-    .button-send{
-        font-size: 35px;
-    }
-    .aviso-whats{
-        font-size: 19px;
-        height: 20px;
-    }
-} */
+}

@@ -9,5 +9,12 @@ class Sorteio(models.Model):
     numero_rifa = models.IntegerField()
     aprovado = models.BooleanField(default=False)
 
+
     def __str__(self):
         return self.nome
+    
+class RifaTexto(models.Model):
+    texto = models.TextField()
+
+    def __str__(self):
+        return self.texto

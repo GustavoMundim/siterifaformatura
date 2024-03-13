@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Sorteio
+from .models import Sorteio, RifaTexto
 # Register your models here.
 
 @admin.register(Sorteio)
@@ -8,3 +8,4 @@ class AdminView(admin.ModelAdmin):
     search_fields = ('nome','sobrenome')
     list_editable = ('aprovado',)
 
+admin.site.register(RifaTexto)

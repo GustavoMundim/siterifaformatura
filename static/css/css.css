@@ -19,9 +19,14 @@
 
 .btn-on{
     font-weight: bold;
-    color: white;
+    color: #ffffff;
     font-size: 20px;
+    width: 200px
 }
+
+.alexa-text{
+    font-size:20px;
+    color: white;}
 
 section{
     display: flex;
@@ -34,8 +39,13 @@ section{
 
 
 .h1-animate{
-    font-size: 75px;
+    font-size: 65px;
     color: white;
+}
+
+.alexa-dot{
+    width: 500px;
+    justify-content: center;
 }
 
 
@@ -76,7 +86,7 @@ section{
 }
 
 .sec-3 .animate{
-    transform: translateX(-100%)
+    transform: translateX(-500%)
 }
 
 .sec-4 .animate{

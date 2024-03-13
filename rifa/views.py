@@ -8,12 +8,12 @@ from django.core.exceptions import PermissionDenied
 def homepage(request):
     numeros = Sorteio.objects.filter(aprovado=True)
     numeros_bloqueados = [num.numero_rifa for num in numeros]
-    return render(request, 'homepage.html', {'my_range': range(201), 'numeros_bloqueados': numeros_bloqueados})
+    return render(request, 'homepage.html', {'my_range': range(251), 'numeros_bloqueados': numeros_bloqueados})
 
 def comprar(request, rifa_id):
     numeros = Sorteio.objects.filter(aprovado=True)
     numeros_bloqueados = [num.numero_rifa for num in numeros]
-    if rifa_id in numeros_bloqueados or rifa_id > 200:
+    if rifa_id in numeros_bloqueados or rifa_id >= 251:
         raise PermissionDenied
     else:
         if request.method == 'GET':
