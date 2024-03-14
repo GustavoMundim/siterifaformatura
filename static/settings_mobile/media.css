@@ -76,7 +76,14 @@
 
 }
 
-
+@media all and(max-width: 410px){
+    section{
+        background: black
+    }
+   .btn-on{
+    width: 200px
+   }
+}
 
 
 @media all and (max-width: 414px) {
