@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-@ltleitevd-3y&1gfoywqace7r=u#%j44l$9qt+$zj+f28#4vx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1",'site-rifa-5288edc8f5a8.herokuapp.com', 'www.rifaformaturagustavo.com.br', 'rifaformaturagustavo.com.br']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    "whitenoise.middleware.WhiteNoiseMiddleware",
+    # "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -83,12 +83,12 @@ DATABASES = {
     }
 }
 
-import dj_database_url
+# import dj_database_url
 
-DATABASES['default'] = dj_database_url.config(
-    conn_max_age=600,
-    conn_health_checks=True,
-)
+# DATABASES['default'] = dj_database_url.config(
+#     conn_max_age=600,
+#     conn_health_checks=True,
+# )
 
 
 
